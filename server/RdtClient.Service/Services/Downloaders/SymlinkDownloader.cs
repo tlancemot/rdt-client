@@ -88,7 +88,7 @@ public class SymlinkDownloader(String uri, String destinationPath, String path) 
                                              Speed = 1
                                          });
 
-                _logger.Debug($"Searching {rcloneMountPath} for {fileName} (attempt #{retryCount})...");
+                _logger.Debug($"[FORK] Searching {rcloneMountPath} for {fileName} (attempt #{retryCount})...");
 
                 file = FindFile(rcloneMountPath, potentialFilePaths, fileName);
 
