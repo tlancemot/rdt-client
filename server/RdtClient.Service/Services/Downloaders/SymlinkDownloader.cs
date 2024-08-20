@@ -73,7 +73,7 @@ public class SymlinkDownloader(String uri, String destinationPath, String path) 
 
             potentialFilePaths.Add(fileName);
             potentialFilePaths.Add(fileNameWithoutExtension);
-
+            potentialFilePaths.Add("");
             potentialFilePaths = potentialFilePaths.Distinct().ToList();
 
             String? file = null;
